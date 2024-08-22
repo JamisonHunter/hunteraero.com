@@ -1,0 +1,21 @@
+body {
+    background: radial-gradient(circle at bottom, #181818, #303030);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    width: vw;
+    text-align: center;
+}
+
+
+hr {
+    border-top: 2px solid white; 
+    width: 80%;
+}
