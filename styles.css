@@ -1,21 +1,143 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #012a4f;
+    --light-blue: #61cdd8;
+    --alt-red: #ed1c24;
+}
+
 body {
-    background: radial-gradient(circle at bottom, #181818, #303030);
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+}
+
+nav {
+    background-color: var(--dark-blue);
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 2px var(--alt-red);
+}
+
+nav img {
+    width: 90px;
+}
+
+nav h4 {
+    margin-top: 50px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    background-color: #181818;
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+a:hover {
+    color: var(--light-blue);
+    text-decoration: underline;
 }
 
 header {
-    width: vw;
+    max-width: 800px;
+    width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
+header img {
+    width: 300px;
+}
 
 hr {
-    border-top: 2px solid white; 
+    border-top: 2px solid var(--alt-red); 
+    max-width: 800px;
     width: 80%;
+}
+
+img {
+    max-width: 800px;
+    width: 80%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.blog-title {
+    margin-bottom: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    flex-direction: column;
+    width: 800px;
+}
+
+section p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.date {
+    color: #808080;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        width: 100%;
+    }
+
+    nav a {
+        margin-left: 10px;
+    }
+
+    header p {
+        width: 80%;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    section {
+        width: 80%;
+    }
 }
