@@ -7,12 +7,12 @@
 :root {
     --dark-blue: #012a4f;
     --light-blue: #61cdd8;
-    --alt-red: #ed1c24;
+    --alt-red: hsl(358, 85%, 52%);
 }
 
 body {
     background-color: #181818;
-    color: rgb(240, 240, 240);;
+    color: rgb(240, 240, 240);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +94,8 @@ section {
     justify-content: flex-start; 
     align-items: flex-start; 
     flex-direction: column;
+    text-align: left;
+    width: 800px;
     max-width: 800px;
 }
 
